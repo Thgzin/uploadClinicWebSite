@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+font-family: 'Arvo', serif;
+
+}
+
+html{
+overflow-x: hidden;
+}
+
+header{
+width: 100%;
+height: 70px;
+background-color: #02749c; 
+display: block;
+position: fixed;
+z-index: 10000000;   
+
+}
+
+.links_cabecalho{   
+float: right;
+height: 100%;
+}
+
+.links_cabecalho a{
+list-style: none;
+text-decoration: none; 
+height: 100%;
+display: table;
+float: left;
+padding: 0px 30px;
+margin:0 -1px;
+}
+
+
+.links_cabecalho li{
+
+display: table-cell;
+vertical-align: middle;
+height: 100%;
+color:whitesmoke;
+font-family: 'Lucida Sans';
+font-size: 18px;
+text-transform: uppercase;
+text-decoration: none;
+
+}
+
+.links_cabecalho  li::after{
+
+
+content: "";
+width: 0%;
+height: 2px;
+background-color: #ffffff;
+display: block;
+margin: auto;
+transition: 1s;
+}
+
+.links_cabecalho  li:hover::after{
+
+width: 100%;
+
+}
+
+@media screen and (max-width: 704px) {
+.links_cabecalho  {
+float: none;
+display: flex;
+position: relative;
+left: 190px;
+margin: 0 5px;
+padding:5px;
+}
+
+}
+
+
+header #logoPagina img{
+
+position: absolute;
+top: -10px;
+height:90px;
+margin-left:5px;
+margin:0 20px;
+}
+
+.conjuntoLinks{
+position: relative;
+top: 115px;
+z-index: 10000;
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.conjuntoLinks a{
+margin: 0 15px;
+text-decoration: none;
+border-bottom: 2px solid #00cad1;
+font-size: 1.1rem;
+}
+
+.containerOrtopedia h1{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+.containerOrtopedia h2{
+    text-align: center;
+    position: relative;
+    top: 230px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    
+}
+
+.containerOrtopedia p{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerOrtopedia img{
+    width: 400px;
+    position: relative;
+    top: 260px;
+    left:100px;
+    z-index: 10000;
+    height:241px;
+}
+
+@media screen and (max-width: 704px) {
+    .containerOrtopedia img  {
+   position: relative;
+   left: 50px;
+   top: 255px;
+    }
+    
+    }
+
+
+
+
+  .box-tabela-especialista {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    position: relative;
+    left: 480px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 704px) {
+    .box-tabela-especialista   {
+   position: relative;
+   left: 50px;
+   top: 260px;
+    }
+    
+    }
+
+
+  .tabela-especialistas {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .tabela-especialistas thead tr {
+    background-color: #00cad1;
+    color: #fff;
+    font-size:1.6rem;
+  }
+  
+  .tabela-especialistas tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+  
+  .tabela-especialistas tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+    font-size:1.1rem;
+  }
+  
+  .tabela-especialistas th, .tabela-especialistas td  {
+    padding: 10px;
+    font-size:1.1rem;
+  }
+
+  .tabela-especialistas tbody td {
+    color: black;
+  }
+
+  .tabela-especialistas .tt td{
+    background-color:#fff;
+  }
+  
+
+ 
+
+  .containerPediatria h2{
+    text-align: center;
+    position: relative;
+    top: 130px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+.containerPediatria h2{
+    text-align: center;
+    position: relative;
+    top: 230px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerPediatria p{
+    text-align: center;
+    position: relative;
+    top: 235px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerPediatria img{
+    width: 400px;
+    position: relative;
+    top: 260px;
+    left:100px;
+    z-index: 10000;
+    height:241px;
+}
+
+@media screen and (max-width: 704px) {
+    .containerPediatria img  {
+   position: relative;
+   left: 40px;
+   top: 390px;
+    }
+    
+    }
+
+    @media screen and (max-width: 704px) {
+      .containerPediatria p  {
+     position: relative;
+     
+     top: 385px;
+      }
+      
+      }
+
+
+  .box-tabela-pediatria {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    position: relative;
+    left: 480px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 704px) {
+    .box-tabela-pediatria   {
+   position: relative;
+   left: 50px;
+   top: 390px;
+    }
+    
+    }
+
+
+    @media screen and (max-width: 704px) {
+      .containerPediatria h2   {
+     position: relative;
+     top:385px;
+     z-index: 100000;
+      }
+      
+      }
+
+
+  .tabela-pediatria {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+    
+  }
+  
+  .tabela-pediatria thead tr {
+    background-color: #00cad1;
+    color: #fff;
+    font-size:1.6rem;
+  
+  }
+  
+  .tabela-pediatria tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+  
+  .tabela-pediatria tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+    font-size:1.3rem;
+  }
+  
+  .tabela-pediatria th, .tabela-especialistas td  {
+    padding: 10px;
+    font-size:1.3rem;
+  }
+
+  .tabela-pediatria tbody td {
+    color: black;
+    
+  }
+
+  .tabela-pediatria .pp td{
+    background-color:#fff;
+    font-size: 1.3rem;
+  }
+
+
+  .tabela-pediatria tbody tr td {
+    padding:10px;
+    
+  }
+
+  .tabela-pediatria thead  th {
+    padding:10px;
+    
+  }
+
+  .tableOrtopedista tbody{
+    position: relative;
+    left: 620px;
+    top: 60px;
+    margin:0 15px;
+    background:rgb(163, 163, 163);
+    
+}
+
+.tableOrtopedista td{
+display: inline-block;
+  margin:0 120px;
+color: #fff;
+font-size:1.3rem;
+position: relative;
+top: 10px;
+}
+
+.tableOrtopedista {
+    border-spacing: 0;
+    text-align: left;
+    width: 1200px;
+    height: 45px;
+  }
+  
+  .tabela-especialistas tbody tr {
+    background-color: #00cad1;
+    color: #fff;
+  }
+
+  .containerGeriatria h2{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+.containerGeriatria h2{
+    text-align: center;
+    position: relative;
+    top: 230px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerGeriatria p{
+    text-align: center;
+    position: relative;
+    top: 240px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerGeriatria img{
+    width: 400px;
+    position: relative;
+    top: 260px;
+    left:100px;
+    z-index: 10000;
+    height:241px;
+}
+
+@media screen and (max-width: 704px) {
+    .containerGeriatria img  {
+   position: relative;
+   left: 50px;
+   top: 540px;
+    }
+    
+    }
+
+    @media screen and (max-width: 704px) {
+      .containerGeriatria p  {
+     position: relative;
+     
+     top: 530px;
+      }
+      
+      }
+
+      @media screen and (max-width: 704px) {
+        .containerGeriatria h2  {
+       position: relative;
+       
+       top: 520px;
+        }
+        
+        }
+
+  .box-tabela-geriatria {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    position: relative;
+    left: 480px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 704px) {
+    .box-tabela-geriatria   {
+   position: relative;
+   left: 50px;
+   top: 540px;
+    }
+    
+    }
+
+
+  .tabela-geriatria {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .tabela-geriatria thead tr {
+    background-color: #00cad1;
+    color: #fff;
+    font-size:1.6rem;
+  }
+  
+  .tabela-geriatria tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+  
+  .tabela-geriatria tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+    font-size:1.3rem;
+  }
+  
+  .tabela-geriatria th, .tabela-geriatria td  {
+    padding: 10px;
+    font-size:1.3rem;
+  }
+
+  .tabela-geriatria tbody td {
+    color: black;
+  }
+
+  .tabela-geriatria .gg td{
+    background-color:#fff;
+  }
+
+  .containerPsicologia h2{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+.containerPsicologia h2{
+    text-align: center;
+    position: relative;
+    top: 210px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerPsicologia p{
+    text-align: center;
+    position: relative;
+    top: 230px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerPsicologia img{
+    width: 400px;
+    position: relative;
+    top: 260px;
+    left:100px;
+    z-index: 10000;
+    height:241px;
+}
+
+@media screen and (max-width: 704px) {
+    .containerPsicologia img  {
+   position: relative;
+   left: 50px;
+   top: 760px;
+    }
+    
+    }
+
+    @media screen and (max-width: 704px) {
+      .containerPsicologia p  {
+     position: relative;
+     
+     top: 750px;
+      }
+      
+      }
+
+      @media screen and (max-width: 704px) {
+        .containerPsicologia h2  {
+       position: relative;
+       
+       top: 740px;
+        }
+        
+        }
+
+  .box-tabela-psicologia {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    position: relative;
+    left: 480px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 704px) {
+    .box-tabela-psicologia   {
+   position: relative;
+   left: 50px;
+   top: 760px;
+    }
+    
+    }
+
+
+  .tabela-psicologia {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .tabela-psicologia thead tr {
+    background-color: #00cad1;
+    color: #fff;
+    font-size:1.6rem;
+  }
+  
+  .tabela-psicologia tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+  
+  .tabela-psicologia tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+    font-size:1.3rem;
+  }
+  
+  .tabela-psicologia th, .tabela-psicologia td  {
+    padding: 10px;
+    font-size:1.3rem;
+  }
+
+  .tabela-psicologia tbody td {
+    color: black;
+  }
+
+  .tabela-psicologia .psi td{
+    background-color:#fff;
+  }
+
+
+  .containerFisioterapia h2{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+.containerFisioterapia h2{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerFisioterapia p{
+    text-align: center;
+    position: relative;
+    top: 270px;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.containerFisioterapia img{
+    width: 400px;
+    position: relative;
+    top: 295px;
+    left:100px;
+    z-index: 10000;
+    height:280px;
+}
+
+@media screen and (max-width: 704px) {
+    .containerFisioterapia img  {
+   position: relative;
+   left: 50px;
+   top: 890px;
+    }
+    
+    }
+
+    @media screen and (max-width: 704px) {
+      .containerFisioterapia p  {
+     position: relative;
+     
+     top: 880px;
+      }
+      
+      }
+
+      @media screen and (max-width: 704px) {
+        .containerFisioterapia h2  {
+       position: relative;
+       
+       top: 870px;
+        }
+        
+        }
+
+  .box-tabela-fisioterapia {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    position: relative;
+    left: 480px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 704px) {
+    .box-tabela-fisioterapia   {
+   position: relative;
+   left: 50px;
+   top: 890px;
+    }
+    
+    }
+
+
+  .tabela-fisioterapia {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .tabela-fisioterapia thead tr {
+    background-color: #00cad1;
+    color: #fff;
+    font-size:1.6rem;
+  }
+  
+  .tabela-fisioterapia tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+  
+  .tabela-fisioterapia tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+    font-size:1.3rem;
+  }
+  
+  .tabela-fisioterapia th, .tabela-fisioterapia td  {
+    padding: 10px;
+    font-size:1.3rem;
+  }
+
+  .tabela-fisioterapia tbody td {
+    color: black;
+  }
+
+  .tabela-fisioterapia .fis td{
+    background-color:#fff;
+  }
+
+
+  footer{
+    background-color: #0d6e71;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #d3d3d3;
+    height: 300px;
+    min-height:15px;
+    position: relative;
+    clear: both;
+    position: relative;
+    top: 155px;
+    
+    }
+    
+    footer img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 15px;
+        }
+
+        footer p{
+            color:#fff;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+
+        @media screen and (max-width: 704px) {
+          footer   {
+         position: relative;
+         
+         top: 1200px;
+          }
+          
+          }
